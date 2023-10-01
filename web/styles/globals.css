@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 34;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 32;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 32;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 28;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 24;
+  font-weight: 600;
+}
+
+.text-fade {
+  color: grey;
+}
+
+.kejuruan-pill:hover {
+  background-color: #fff200;
+}
+
+div.table-responsive table.dataTable thead {
+  background-color: #fff200; /* Your desired background color */
+  /* Add more styles as needed */
+}
+
+/* Target the header cells */
+div.table-responsive table.dataTable thead th {
+  /* Additional styles for header cells */
+  background-color: #fff200;
+}
+
+body {
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f2f2;
+  /* color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+.ck-editor__editable {
+  min-height: 150px;
+  max-height: 150px;
+}
