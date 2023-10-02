@@ -22,9 +22,9 @@ func main() {
 
 	r := gin.Default()
 
-	r.Static("/public", "./public")
+	r.Static("/", "./public")
 
-	api := r.Group("/")
+	api := r.Group("/api")
 	routers.Router(api)
 
 	r.Run(fmt.Sprintf(":%s", os.Getenv("PORT")))

@@ -25,12 +25,16 @@ func Router(r *gin.RouterGroup) {
 		admin
 	*/
 	adminRouter := r.Group("/admin", middlewares.JWTMiddleware(configs.Admin))
-	// web profile router
+	// web profile
 	webProfileRouter := adminRouter.Group("/web-profile")
 	webProfileRouter.POST("/about", func(ctx *gin.Context) {
 		admin.UpdateAbout(ctx)
 	})
 	webProfileRouter.POST("/contact", func(ctx *gin.Context) {
 		admin.UpdateContact(ctx)
+	})
+	// socmed
+	adminRouter.POST("/socmed", func(ctx *gin.Context) {
+		admin.CreateSocmed(ctx)
 	})
 }

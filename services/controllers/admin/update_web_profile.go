@@ -109,3 +109,10 @@ func UpdateContact(ctx *gin.Context) {
 		"data":    result,
 	})
 }
+
+/*
+update or insert socmed
+*/
+func CreateSocmed(ctx *gin.Context) {
+
+}

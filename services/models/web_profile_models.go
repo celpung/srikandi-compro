@@ -11,3 +11,10 @@ type Contact struct {
 	Title   string `gorm:"not null" json:"title" validate:"required"`
 	Content string `gorm:"not null" json:"content" validate:"required"`
 }
+
+type Socmed struct {
+	ID       uint   `gorm:"primaryKey" json:"id"`
+	Platform string `gorm:"not null, unique" json:"platform" validate:"required"`
+	Link     string `gorm:"not null" json:"link" validate:"required"`
+	Icon     string `json:"icon"`
+}
