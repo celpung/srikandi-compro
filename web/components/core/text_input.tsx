@@ -8,6 +8,7 @@ interface textInputInterface {
   placeholder: string;
   icon?: IconDefinition;
   label?: string;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 interface selectInputProps {
@@ -15,9 +16,11 @@ interface selectInputProps {
   placeholder: string;
   icon?: IconDefinition;
   label?: string;
+  onChange?: (event: React.ChangeEvent<HTMLSelectElement>) => void;
+
 }
 
-export function TextInput({ type, id, placeholder, icon, label }: textInputInterface) {
+export function TextInput({ type, id, placeholder, icon, label, onChange }: textInputInterface) {
   const inputPaddingClass = icon ? "pl-10" : "pl-2";
 
   return (
@@ -34,6 +37,7 @@ export function TextInput({ type, id, placeholder, icon, label }: textInputInter
           id={id}
           className={`w-full ${inputPaddingClass} pr-2 py-2 rounded border border-gray-300 focus:ring focus:ring-blue-400 focus:outline-none`}
           placeholder={placeholder}
+          onChange={onChange}
         />
         {icon && <FontAwesomeIcon icon={icon} className="text-gray-400 absolute left-3 top-3" />}
       </div>

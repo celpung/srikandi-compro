@@ -23,7 +23,13 @@ export default function TextEditor({
   return (
     <div className="flex flex-col h-64">
       <div className="mb-3">
-        <TextInput id="title" type="text" label={titleLabel} placeholder={titlePlaceHolder} />
+        <TextInput
+          id="title"
+          type="text"
+          label={titleLabel}
+          placeholder={titlePlaceHolder}
+          onChange={(event) => onTitleChange(event.target.value)}
+        />
       </div>
 
       <div className="flex-grow">

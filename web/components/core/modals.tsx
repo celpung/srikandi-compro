@@ -5,10 +5,10 @@ interface modalComponentProps {
   onClose: () => void;
   onSubmit: () => void;
   children: ReactNode;
-  title: string
+  title: string;
 }
 
-export default function ModalComponent({ onClose, onSubmit,children, title }: modalComponentProps) {
+export default function ModalComponent({ onClose, onSubmit, children, title }: modalComponentProps) {
   return (
     <div className="fixed inset-0 flex items-center justify-center z-50">
       <div className="modal bg-white w-1/2 p-4 rounded-lg shadow-lg shadow-gray-400 border border-yellow-300 ">
