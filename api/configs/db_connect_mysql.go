@@ -31,7 +31,7 @@ func AutoMigrage() {
 	ConnectDatabase()
 
 	if migrateErr := DB.AutoMigrate(
-		&entity.User{}, &entity.About{},
+		&entity.User{}, &entity.About{}, &entity.Contact{},
 	); migrateErr != nil {
 		panic(migrateErr)
 	}

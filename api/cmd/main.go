@@ -28,6 +28,7 @@ func main() {
 	// import all routers
 	routers.UserRouter(r)
 	routers.AboutRouter(r)
+	routers.ContactRouter(r)
 
 	// Start the server
 	r.Run(fmt.Sprintf(":%s", os.Getenv("PORT")))
