@@ -46,6 +46,7 @@ func (ah *AboutHandler) GetAbout(c *gin.Context) {
 		c.JSON(http.StatusNotFound, gin.H{
 			"error": "record not found",
 		})
+		return
 	}
 
 	c.JSON(http.StatusOK, about)
