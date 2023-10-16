@@ -29,6 +29,7 @@ func main() {
 	routers.UserRouter(r)
 	routers.AboutRouter(r)
 	routers.ContactRouter(r)
+	routers.SocmedRouter(r)
 
 	// Start the server
 	r.Run(fmt.Sprintf(":%s", os.Getenv("PORT")))
