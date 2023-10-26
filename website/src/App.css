@@ -1,0 +1,98 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+h1 {
+  font-size: 38px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 34;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 32;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 32;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 28;
+  font-weight: 600;
+}
+
+h6 {
+  font-size: 24;
+  font-weight: 600;
+}
+
+.text-fade {
+  color: grey;
+}
+
+.kejuruan-pill:hover {
+  background-color: #fff200;
+}
+
+div.table-responsive table.dataTable thead {
+  background-color: #fff200; /* Your desired background color */
+  /* Add more styles as needed */
+}
+
+/* Target the header cells */
+div.table-responsive table.dataTable thead th {
+  /* Additional styles for header cells */
+  background-color: #fff200;
+}
+
+body {
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f2f2;
+}
+
+.ck-editor__editable {
+  min-height: 150px;
+  max-height: 150px;
+}
